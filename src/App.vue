@@ -11,5 +11,6 @@
 #vue-admin-beautiful {
   height: 100vh;
   overflow: hidden;
+  background:#e5e5e5;
 }
 </style>

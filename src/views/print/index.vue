@@ -1,23 +1,44 @@
 <template>
-  <a-button type="primary" size="small" @click="handleSubmit(false)">打印 </a-button>
-  <a-button type="primary" size="small" @click="handlePreview(false)">预览 </a-button>
-  <form id="form1" style="dispaly: none">
-    <table border="1" style="border-collapse: collapse">
-      <tr>
-        <td>打印初始化</td>
-        <td>打印初始化</td>
-      </tr>
-      <tr>
-        <td>打印初始化</td>
-        <td>打印初始化</td>
-      </tr>
-    </table>
-  </form>
+  <a-row class="print mt20" :span="24">
+    <!--  -->
+    <!-- > -->
+    <a-tabs v-model:activeKey="activeKey">
+      <a-tab-pane key="Title" tab="标题">
+      <Title></Title>
+      </a-tab-pane>
+      <a-tab-pane key="QRCode" tab="二维码">
+      <QRCode></QRCode>
+      </a-tab-pane>
+            <a-tab-pane key="Text" tab="文本">
+      <Text></Text>
+      </a-tab-pane>
+    </a-tabs>
+    <a-col :span="24">
+      <a-button type="primary" size="small" @click="handleSubmit(false)">打印 </a-button>
+      <a-button type="primary" size="small" @click="handlePreview(false)">预览 </a-button>
+      <form id="form1">
+        <table border="1" style="border-collapse: collapse">
+          <tr>
+            <td>打印初始化</td>
+            <td>打印初始化</td>
+          </tr>
+          <tr>
+            <td>打印初始化</td>
+            <td>打印初始化</td>
+          </tr>
+        </table>
+      </form></a-col
+    >
+  </a-row>
 </template>
 <script lang="ts" setup>
+import { ref } from "vue";
 import { getLodop } from "@/utils/LodopFuncs.js";
 import { notification } from "ant-design-vue";
-
+import Title from "./component/title.vue"
+import QRCode from "./component/QRCode.vue"
+import Text from "./component/text.vue"
+const activeKey = ref('QRCode')
 /**
  * PRINT_INIT
  * 打印初始化
@@ -94,8 +115,8 @@ const handlePreview = () => {
 };
 
 const AddPrintContent = () => {
-  LODOP.ADD_PRINT_BARCODE(28, 88, 100, 100, "QRCode", "123456789012"); //设置条码位置、宽高、字体、值
-  // LODOP.ADD_PRINT_TABLE(0, 0, 100,100,document.getElementById("form1").innerHTML)
+  // LODOP.ADD_PRINT_BARCODE(28, 88, 100, 100, "QRCode", "123456789012"); //设置条码位置、宽高、字体、值
+  LODOP.ADD_PRINT_TABLE(0, 0, 100, 100, document.getElementById("form1").innerHTML);
   // LODOP.SET_PRINT_STYLEA(0, "FontSize", 18); //设置上面这个条码下方的文字字体大小
   // LODOP.SET_PRINT_STYLEA(0, "Color", "#FF0000"); //设置当前条码以及条码下方字体的颜色
   // LODOP.SET_PRINT_STYLEA(0, "Angle", 180); //设置旋转角度
@@ -106,4 +127,14 @@ const AddPrintContent = () => {
   // LODOP.SET_PRINT_STYLEA(0, "GroundColor", "#0080FF"); //设置条码的背景色
 };
 </script>
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.print {
+  text-align: left;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+}
+.tips {
+}
+</style>
