@@ -1,7 +1,4 @@
 <template>
-  <a-col :span="24" class="tips">
-    <h1>lodop标签打印</h1>
-  </a-col>
   <a-list item-layout="horizontal">
     <a-list-item v-for="item in data">
       <a-list-item-meta>
@@ -51,9 +48,6 @@ const data = [
 ];
 </script>
 <style lang="less" scoped>
-h1 {
-  text-align: center;
-}
 .ant-list {
   width: 100%;
 }
