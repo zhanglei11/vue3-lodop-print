@@ -16,6 +16,9 @@
       <a-tab-pane key="Table" tab="表格">
         <Table></Table>
       </a-tab-pane>
+      <a-tab-pane key="Image" tab="图片">
+        <Image></Image>
+      </a-tab-pane>
     </a-tabs>
   </a-row>
 </template>
@@ -26,7 +29,8 @@ import Title from "./component/title.vue";
 import QRCode from "./component/QRCode.vue";
 import Text from "./component/text.vue";
 import Table from "./component/table.vue";
-const activeKey = ref("Table");
+import Image from "./component/image.vue";
+const activeKey = ref("Image");
 </script>
 <style lang="less" scoped>
 .print {
