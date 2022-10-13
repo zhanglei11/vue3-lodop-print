@@ -35,7 +35,7 @@ const handlePreview = async () => {
  * 顶，左，宽，高，dom
  */
 const AddPrintContent = () => {
-  LODOP.ADD_PRINT_TABLE(10, 0, 100, 100, document.getElementById("form1").innerHTML);
+  LODOP.ADD_PRINT_TABLE(10, 0, 600, 250, document.getElementById("form1").innerHTML);
 };
 
 const init = () => {

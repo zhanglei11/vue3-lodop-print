@@ -19,6 +19,9 @@
       <a-tab-pane key="Image" tab="图片">
         <Image></Image>
       </a-tab-pane>
+      <a-tab-pane key="Html" tab="HTML">
+        <Html></Html>
+      </a-tab-pane>
     </a-tabs>
   </a-row>
 </template>
@@ -30,7 +33,8 @@ import QRCode from "./component/QRCode.vue";
 import Text from "./component/text.vue";
 import Table from "./component/table.vue";
 import Image from "./component/image.vue";
-const activeKey = ref("Image");
+import Html from "./component/html.vue";
+const activeKey = ref("Html");
 </script>
 <style lang="less" scoped>
 .print {
