@@ -1,5 +1,4 @@
 /* --------Base-------- */
-@import 'ali/iconfont.css';
 .fz12 {
   font-size: 12px !important;
 }
@@ -213,4 +212,9 @@ textarea {
 .card-set .ant-tabs-nav {
   background: #fff;
   margin: 0 !important;
+}
+.select-color {
+  font-size: 12px;
+  color: #999;
+  line-height: 14px;
 }

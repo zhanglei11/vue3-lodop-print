@@ -1,7 +1,6 @@
 import { RouteRecordRaw } from 'vue-router';
 import baseRoutes from './base'; //基础
-import pagesRoutes from '@/pages/router'; //基础
 
-const routes: RouteRecordRaw[] = [...baseRoutes, ...pagesRoutes]
+const routes: RouteRecordRaw[] = [...baseRoutes]
 
 export default routes;

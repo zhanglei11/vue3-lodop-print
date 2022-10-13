@@ -2,7 +2,6 @@ import { Router } from 'vue-router';
 import NProgress from 'nprogress'; // progress bar
 import 'nprogress/nprogress.css';
 
-const routesWhiteList: any = ['/','/login', '/404', '/403', '/500'];
 const registerRouteGuard = (router: Router) => {
   /**
    * 全局前置守卫
@@ -12,21 +11,7 @@ const registerRouteGuard = (router: Router) => {
    */
   router.beforeEach((to: any, from: any, next) => {
     NProgress.start();
-    if (routesWhiteList.includes(to.path)) {
-      if(to.path === '/'){
-        next({ path: '/login' });
-      }else{
-        next();
-      }
-    } else {
-      next();
-      // if (hasToken) {
-      //   next();
-      // } else {
-      //   next();
-      //   // next({ path: "/login" });
-      // }
-    }
+    next();
   });
 
   /**
