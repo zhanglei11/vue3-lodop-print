@@ -1,0 +1,30 @@
+{
+  "id": "3283649",
+  "name": "web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2523702",
+      "name": "符号-国际化",
+      "font_class": "guojihua",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    },
+    {
+      "icon_id": "3878697",
+      "name": "国际化",
+      "font_class": "world",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "14792495",
+      "name": "国际化",
+      "font_class": "guojihua1",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    }
+  ]
+}
