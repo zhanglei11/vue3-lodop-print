@@ -18,3 +18,4 @@
 #### 使用说明
 
 无预览静默打印纯前端处理，lodop收费，慎用。
+[收费价格参考](http://www.lodop.net/Lodop_Lic.html)
