@@ -1,5 +1,5 @@
 <template>
-  <a-col id="vue-admin-beautiful">
+  <a-col id="APP">
     <a-config-provider :locale="locale_s">
       <router-view />
     </a-config-provider>
@@ -8,7 +8,7 @@
 <script lang="ts" setup name="APP">
 </script>
 <style lang="less" scoped>
-#vue-admin-beautiful {
+#APP {
   height: 100vh;
   overflow: hidden;
   background:#e5e5e5;

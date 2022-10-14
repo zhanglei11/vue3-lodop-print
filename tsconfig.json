@@ -26,7 +26,6 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "src/utils/index.js",
     "src/utils/LodopFuncs.js",
   ],
   "exclude": ["node_modules"]

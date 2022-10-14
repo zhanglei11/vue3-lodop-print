@@ -51,7 +51,6 @@ h1 {
 .ant-tabs {
   width: 100%;
 }
-
 :deep(.ant-tabs-content-holder) {
   padding-bottom: 20px !important;
 }
