@@ -13,11 +13,11 @@
 </template>
 <script lang="ts" setup>
 const data = [
-  { title: "PRINT_INIT", value: "打印初始化" },
-  { title: "PREVIEW", value: "打印预览" },
-  { title: "PRINT", value: "直接打印" },
-  { title: "PRINT_SETUP", value: "打印维护" },
-  { title: "PRINT_DESIGN", value: "打印设计" },
+  // { title: "PRINT_INIT", value: "打印初始化" },
+  // { title: "PREVIEW", value: "打印预览" },
+  // { title: "PRINT", value: "直接打印" },
+  // { title: "PRINT_SETUP", value: "打印维护" },
+  // { title: "PRINT_DESIGN", value: "打印设计" },
   {
     title: "ADD_PRINT_TEXT",
     value:

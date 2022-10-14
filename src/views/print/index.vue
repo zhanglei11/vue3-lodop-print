@@ -1,10 +1,10 @@
 <template>
   <a-row class="print mt20" :span="24">
     <a-col :span="24" class="tips">
-      <h1>lodop标签打印</h1>
+      <h1 class="pt20">lodop标签打印</h1>
     </a-col>
     <a-tabs v-model:activeKey="activeKey">
-      <a-tab-pane key="Title" tab="标题">
+      <a-tab-pane key="Title" tab="简介">
         <Title></Title>
       </a-tab-pane>
       <a-tab-pane key="QRCode" tab="二维码">
@@ -34,7 +34,7 @@ import Text from "./component/text.vue";
 import Table from "./component/table.vue";
 import Image from "./component/image.vue";
 import Html from "./component/html.vue";
-const activeKey = ref("Html");
+const activeKey = ref("Title");
 </script>
 <style lang="less" scoped>
 .print {
@@ -43,8 +43,16 @@ const activeKey = ref("Html");
   margin-left: auto;
   margin-right: auto;
   background: #fff;
+  padding: 0 20px;
 }
 h1 {
   text-align: center;
+}
+.ant-tabs {
+  width: 100%;
+}
+
+:deep(.ant-tabs-content-holder) {
+  padding-bottom: 20px !important;
 }
 </style>

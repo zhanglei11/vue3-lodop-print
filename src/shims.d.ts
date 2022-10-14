@@ -4,6 +4,3 @@ declare module '*.vue' {
 
   export default componentOptions
 }
-declare module 'vue-i18n'
-declare module 'gojs'
-declare module 'jquery'
