@@ -28,12 +28,12 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import { getLodop } from "@/utils/LodopFuncs.js";
-import Title from "./component/title.vue";
-import QRCode from "./component/QRCode.vue";
-import Text from "./component/text.vue";
-import Table from "./component/table.vue";
-import Image from "./component/image.vue";
-import Html from "./component/html.vue";
+import Title from "@/components/title.vue";
+import QRCode from "@/components/QRCode.vue";
+import Text from "@/components/text.vue";
+import Table from "@/components/table.vue";
+import Image from "@/components/image.vue";
+import Html from "@/components/html.vue";
 const activeKey = ref("Title");
 </script>
 <style lang="less" scoped>
