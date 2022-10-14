@@ -1,7 +1,6 @@
 import { Router } from 'vue-router';
 import NProgress from 'nprogress'; // progress bar
 import 'nprogress/nprogress.css';
-
 const registerRouteGuard = (router: Router) => {
   /**
    * 全局前置守卫
@@ -25,7 +24,6 @@ const registerRouteGuard = (router: Router) => {
    * 全局后置守卫
    */
   router.afterEach((to: any, from: any, failure: any) => {
-    // 改标题,监控上报一些基础信息
     document.title = to.meta.title;
     NProgress.done();
   });
