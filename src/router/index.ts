@@ -1,6 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import registerRouteGuard from '@/utils/permission';
-import routes from './routes';
+const lomprint = () => import('@/views/index.vue');
+const routes = [
+  {
+    path: '/',
+    name: 'lomprint',
+    component: lomprint,
+    meta: {
+      title: '打印',
+      keepAlive: true
+    }
+  },
+]
 const router = createRouter({
   history: createWebHashHistory(),
   routes
