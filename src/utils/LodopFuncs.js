@@ -117,24 +117,28 @@ function checkOrTryHttp() {
 export const getLodop = (oOBJECT, oEMBED) => {
   var strFontTag = "<br><font color='#FF00FF'>打印控件"
   var strLodopInstall =
-    strFontTag + "未安装!点击这里<a href='install_lodop32.exe' target='_self'>执行安装</a>"
+    strFontTag +
+    "未安装!点击这里<a href='http://www.lodop.net/download/CLodop_Setup_for_Win64NT_6.570EN.zip' target='_self'>执行安装</a>"
   var strLodopUpdate =
-    strFontTag + "需要升级!点击这里<a href='install_lodop32.exe' target='_self'>执行升级</a>"
+    strFontTag +
+    "需要升级!点击这里<a href='http://www.lodop.net/download/CLodop_Setup_for_Win64NT_6.570EN.zip' target='_self'>执行升级</a>"
   var strLodop64Install =
-    strFontTag + "未安装!点击这里<a href='install_lodop64.exe' target='_self'>执行安装</a>"
+    strFontTag +
+    "未安装!点击这里<a href='http://www.lodop.net/download/CLodop_Setup_for_Win64NT_6.570EN.zip' target='_self'>执行安装</a>"
   var strLodop64Update =
-    strFontTag + "需要升级!点击这里<a href='install_lodop64.exe' target='_self'>执行升级</a>"
+    strFontTag +
+    "需要升级!点击这里<a href='http://www.lodop.net/download/CLodop_Setup_for_Win64NT_6.570EN.zip' target='_self'>执行升级</a>"
   var strCLodopInstallA =
-    "<br><font color='#FF00FF'>Web打印服务CLodop未安装启动，点击这里<a href='CLodop_Setup_for_Win32NT.exe' target='_self'>下载执行安装</a>"
+    "<br><font color='#FF00FF'>Web打印服务CLodop未安装启动，点击这里<a href='http://www.lodop.net/download/CLodop_Setup_for_Win64NT_6.570EN.zip' target='_self'>下载执行安装</a>"
   var strCLodopInstallB =
     "<br>（若此前已安装过，可<a href='CLodop.protocol:setup' target='_self'>点这里直接再次启动</a>）"
   var strCLodopUpdate =
-    "<br><font color='#FF00FF'>Web打印服务CLodop需升级!点击这里<a href='CLodop_Setup_for_Win32NT.exe' target='_self'>执行升级</a>"
+    "<br><font color='#FF00FF'>Web打印服务CLodop需升级!点击这里<a href='http//www.lodop.net/download/CLodop_Setup_for_Win64NT_6.570EN.zip' target='_self'>执行升级</a>"
   var strLodop7FontTag = "<br><font color='#FF00FF'>Web打印服务Lodop7"
   var strLodop7HrefX86 =
-    "点击这里<a href='Lodop7_Linux_X86_64.tar.gz' target='_self'>下载安装</a>(下载后解压，点击lodop文件开始执行)"
+    "点击这里<a href='http//www.lodop.net/download/CLodop_Setup_for_Win64NT_6.570EN.zip' target='_self'>下载安装</a>(下载后解压，点击lodop文件开始执行)"
   var strLodop7HrefARM =
-    "点击这里<a href='Lodop7_Linux_ARM64.tar.gz'  target='_self'>下载安装</a>(下载后解压，点击lodop文件开始执行)"
+    "点击这里<a href='http//www.lodop.net/download/CLodop_Setup_for_Win64NT_6.570EN.zip'  target='_self'>下载安装</a>(下载后解压，点击lodop文件开始执行)"
   var strLodop7Install_X86 = strLodop7FontTag + '未安装启动，' + strLodop7HrefX86
   var strLodop7Install_ARM = strLodop7FontTag + '未安装启动，' + strLodop7HrefARM
   var strLodop7Update_X86 = strLodop7FontTag + '需升级，' + strLodop7HrefX86
